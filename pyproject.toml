@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hqnn"
+version = "1.0.0"
+description = "Hybrid quantum-classical neural network (HQNN) for fake news detection"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Ainaz Jamshidi" }, { name = "Muhammad Arif" }]
+dependencies = ["numpy", "pandas", "scikit-learn>=1.2", "torch>=2.0"]
+
+[project.optional-dependencies]
+pennylane = ["pennylane>=0.35"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,29 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install (CPU-only PyTorch + PennyLane)
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[pennylane]" pytest
+      - name: Run tests
+        shell: bash
+        run: |
+          set +e
+          pytest -q -rfE --tb=line 2>&1 | tee pytest.log
+          status=${PIPESTATUS[0]}
+          if [ $status -ne 0 ]; then
+            grep -E "^(FAILED|ERROR)|Error:|Exception:" pytest.log | head -20 | while IFS= read -r l; do echo "::error::$l"; done
+          fi
+          exit $status

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "HQNN: Hybrid Quantum Neural Network for Fake News Detection"
+repository-code: "https://github.com/marif561/Fake_News_Detection"
+license: MIT
+authors:
+  - family-names: Jamshidi
+    given-names: Ainaz
+  - family-names: Arif
+    given-names: Muhammad
+keywords: [quantum machine learning, fake news detection, hybrid quantum-classical neural network, PennyLane]
+preferred-citation:
+  type: conference-paper
+  title: "Revolutionizing Fake News Detection: A Quantum Machine Learning Paradigm"
+  collection-title: "2025 59th Annual Conference on Information Sciences and Systems (CISS)"
+  publisher:
+    name: "IEEE"
+  year: 2025
+  doi: "10.1109/CISS64860.2025.10944642"
+  authors:
+    - family-names: Jamshidi
+      given-names: Ainaz
+    - family-names: Arif
+      given-names: Muhammad

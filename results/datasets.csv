@@ -1,0 +1,4 @@
+id,source,fake,real,total,reference_in_paper
+KG1,Kaggle,23481,21417,44898,Chaudhary (2021) Detecting fake news dataset [5]
+KG2,Kaggle,3164,3171,6335,Bisaillon - Fake and real news dataset [6]
+HF,Hugging Face (ErfanMoosaviMonazzah/fake-news-detection-dataset-English),15478,14522,30000,Monazzah [7]

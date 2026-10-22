@@ -1,0 +1,17 @@
+parameter,value,source
+qubits,6,paper
+embedding,"angle embedding, RY rotations",paper
+entangling gates,"CNOT between neighbouring qubits, trainable weights",paper
+measurement,Pauli-Z expectation per qubit,paper
+classical head,"linear layer 6 -> 2, softmax",paper
+features,TF-IDF -> PCA (6 components),paper
+optimizer,Adam,paper
+learning rate,0.001,paper
+epochs,20,paper
+batch size,32,paper
+loss,cross-entropy,paper
+evaluation,5-fold cross-validation (mean ± std),paper
+entangling layers,2,this implementation (not stated)
+rotation in entangling layers,RX (PennyLane BasicEntanglerLayers default),this implementation (not stated)
+angle scaling,"min-max to [0, π]",this implementation (not stated)
+TF-IDF vocabulary,"5,000 terms, English stop words removed",this implementation (not stated)

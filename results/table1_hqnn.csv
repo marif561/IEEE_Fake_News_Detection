@@ -1,0 +1,4 @@
+dataset,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,f1_mean,f1_std
+KG1,90.71,0.20,89.30,0.00,91.49,0.00,90.37,0.00
+KG2,78.75,1.65,80.24,0.01,76.36,0.02,78.24,0.01
+HF,89.03,0.49,87.59,0.01,90.16,0.01,88.83,0.00
