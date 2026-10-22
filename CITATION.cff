@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the paper below."
 title: "HQNN: Hybrid Quantum Neural Network for Fake News Detection"
-repository-code: "https://github.com/marif561/Fake_News_Detection"
+repository-code: "https://github.com/marif561/IEEE_Fake_News_Detection"
 license: MIT
 authors:
   - family-names: Jamshidi

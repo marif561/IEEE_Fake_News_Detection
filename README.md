@@ -8,7 +8,7 @@
 [![PennyLane](https://img.shields.io/badge/quantum-PennyLane%20%7C%20PyTorch-8b5cf6)](#how-the-quantum-layer-works)
 [![Python](https://img.shields.io/badge/python-3.9%2B-3776AB)](#installation)
 [![License: MIT](https://img.shields.io/badge/code-MIT-green)](LICENSE)
-[![tests](https://github.com/marif561/Fake_News_Detection/actions/workflows/tests.yml/badge.svg)](https://github.com/marif561/Fake_News_Detection/actions/workflows/tests.yml)
+[![tests](https://github.com/marif561/IEEE_Fake_News_Detection/actions/workflows/tests.yml/badge.svg)](https://github.com/marif561/IEEE_Fake_News_Detection/actions/workflows/tests.yml)
 
 Code and results for **"Revolutionizing Fake News Detection: A Quantum Machine Learning Paradigm"**, *2025 59th Annual Conference on Information Sciences and Systems (CISS)*, IEEE.
 
@@ -99,8 +99,8 @@ The tests check that both give the same expectation values, and that the simulat
 ## Installation
 
 ```bash
-git clone https://github.com/marif561/Fake_News_Detection.git
-cd Fake_News_Detection
+git clone https://github.com/marif561/IEEE_Fake_News_Detection.git
+cd IEEE_Fake_News_Detection
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[pennylane]"
 ```
